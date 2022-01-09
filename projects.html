@@ -49,6 +49,11 @@
                 Check out some cool projects that people are building!
             </blockquote>
 
+            <br>
+            <h6>Current Projects: 2</h6>
+            <br>
+        
+
           <table class="highlight centered responsive-table">
             <thead>
               <tr>
@@ -56,8 +61,9 @@
                 
                 <th>Project Name</th>
                 <th>Creator(s)</th>
+                <th>Type</th>
                 <th>Language(s)</th>
-                <th>Platform</th>
+                <th>Platform(s)</th>
                 
                 <!-- ADMIN ONLY BUTTONS -->
                 <th>Creator Op</th>
@@ -68,34 +74,36 @@
             <tbody>
                 <tr>
       
-                  <td class="blue-text clickable" onclick="project.href='/projects/1.html'">(Project Name)</td>
-                  <td>(Creators)</td>
-                  <td>(Languages)</td>
-                  <td>(Platform)</td>
+                  <td class="blue-text clickable" onclick="location.href='/projects/1.html'">Ping Pong</td>
+                  <td>Aditi and her friends</td>
+                  <td>Game</td>
+                  <td>Java, JavaFX, CSS</td>
+                  <td>Desktop</td>
 
                   <!-- ADMIN ONLY BUTTONS -->
                   <td nowrap>
                     <a class="btn-floating btn-small waves-effect waves-light green lighten-1" href="/projectform.html"><i
                         class="material-icons">edit</i></a>
                     <a class="btn-floating waves-effect waves-light red"
-                      onclick='confirmDelete("Project Name","{{ project_id}}", ".")'><i
+                      onclick='confirmDelete("Ping Pong","{{ project_id}}", ".")'><i
                         class="material-icons">delete</i></a>
                   </td>
                 </tr>
 
                 <tr>
       
-                    <td class="blue-text clickable" onclick="project.href='/projects/2.html'">(Project Name)</td>
-                    <td>(Creators)</td>
-                    <td>(Languages)</td>
-                    <td>(Platform)</td>
+                    <td class="blue-text clickable" onclick="location.href='/projects/2.html'">Cross It Off</td>
+                    <td>Hackers</td>
+                    <td>Organizing</td>
+                    <td>HTML, CSS, Javascript</td>
+                    <td>Desktop</td>
   
                     <!-- ADMIN ONLY BUTTONS -->
                     <td nowrap>
                       <a class="btn-floating btn-small waves-effect waves-light green lighten-1" href="/projectform.html"><i
                           class="material-icons">edit</i></a>
                       <a class="btn-floating waves-effect waves-light red"
-                        onclick='confirmDelete("Project Name","{{ project_id}}", ".")'><i
+                        onclick='confirmDelete("Cross It Off","{{ project_id}}", ".")'><i
                           class="material-icons">delete</i></a>
                     </td>
                   </tr>
@@ -103,15 +111,12 @@
             </tbody>
             </table>
 
-        <br>
-        <h6>Current Projects: 2</h6>
-        <br>
-
         </div>
 
         <a href="/projectform.html" class="btn-floating btn-large orange fixed-action-btn">
-            <i class="large material-icons">create</i>
+            <i class="large material-icons">add</i>
         </a>
+
       </main>
 
       <footer class="page-footer">
