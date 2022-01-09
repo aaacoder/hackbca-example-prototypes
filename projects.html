@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>HackBCA 20XX</title>
+  <link rel="shortcut icon" type="image/jpg" href="/images/favicon.ico" />
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="/styles/materialize.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- Shared site-wide CSS  -->
+  <link rel="stylesheet" href="/styles/main.css">
+  <!-- Page specific CSS -->
+  <link rel="stylesheet" href="/styles/tables.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+          <div class="nav-wrapper">
+            <img class="hide-on-small-and-down" src="/images/bca-logo-transparent.png">
+            <a href="/" class="brand-logo">HackBCA 20XX</a>
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul id="desktop-nav" class="right hide-on-med-and-down">
+              <li><a href="/events.html"><i class="material-icons left">event</i>Events</a></li>
+              <li><a href="/attendees.html"><i class="material-icons left">people</i>Attendees</a></li>
+              <li><a href="/projects.html"><i class="material-icons left">build</i>Projects</a></li>
+              <li><a href="/login.html" class="btn">Login / Register</a></li>
+            </ul>
+          </div>
+        </nav>
+        <ul id="mobile-nav" class="sidenav">
+          <li><a href="/events.html"><i class="material-icons left">event</i>Events</a></li>
+          <li><a href="/attendees.html"><i class="material-icons left">people</i>Attendees</a></li>
+          <li><a href="/projects.html"><i class="material-icons left">build</i>Projects</a></li>
+          <li><a href="/login.html" class="btn">Login / Register</a></li>
+        </ul>
+      </header>
+
+      <main>
+          <div class="container">
+
+            <h1>Project List</h1>
+
+            <blockquote>
+                Check out some cool projects that people are building!
+            </blockquote>
+
+          <table class="highlight centered responsive-table">
+            <thead>
+              <tr>
+                <!-- USER ONLY-->
+                
+                <th>Project Name</th>
+                <th>Creator(s)</th>
+                <th>Language(s)</th>
+                <th>Platform</th>
+                
+                <!-- ADMIN ONLY BUTTONS -->
+                <th>Creator Op</th>
+              </tr>
+    
+            </thead>
+
+            <tbody>
+                <tr>
+      
+                  <td class="blue-text clickable" onclick="project.href='/projects/1.html'">(Project Name)</td>
+                  <td>(Creators)</td>
+                  <td>(Languages)</td>
+                  <td>(Platform)</td>
+
+                  <!-- ADMIN ONLY BUTTONS -->
+                  <td nowrap>
+                    <a class="btn-floating btn-small waves-effect waves-light green lighten-1" href="/projectform.html"><i
+                        class="material-icons">edit</i></a>
+                    <a class="btn-floating waves-effect waves-light red"
+                      onclick='confirmDelete("Project Name","{{ project_id}}", ".")'><i
+                        class="material-icons">delete</i></a>
+                  </td>
+                </tr>
+
+                <tr>
+      
+                    <td class="blue-text clickable" onclick="project.href='/projects/2.html'">(Project Name)</td>
+                    <td>(Creators)</td>
+                    <td>(Languages)</td>
+                    <td>(Platform)</td>
+  
+                    <!-- ADMIN ONLY BUTTONS -->
+                    <td nowrap>
+                      <a class="btn-floating btn-small waves-effect waves-light green lighten-1" href="/projectform.html"><i
+                          class="material-icons">edit</i></a>
+                      <a class="btn-floating waves-effect waves-light red"
+                        onclick='confirmDelete("Project Name","{{ project_id}}", ".")'><i
+                          class="material-icons">delete</i></a>
+                    </td>
+                  </tr>
+      
+            </tbody>
+            </table>
+
+        <br>
+        <h6>Current Projects: 2</h6>
+        <br>
+
+        </div>
+
+        <a href="/projectform.html" class="btn-floating btn-large orange fixed-action-btn">
+            <i class="large material-icons">create</i>
+        </a>
+      </main>
+
+      <footer class="page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Sponsors</h5>
+              <p>hackBCA is brought to you by:</p>
+              <ul>
+                <li>BCA PPO</li>
+                <li>Tech-Pa</li>
+                <li>&lt;Corporate Sponsors&gt;</li>
+                <li>Wanna join this list? Sponsor us!</li>
+              </ul>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Contact Us</h5>
+              <ul>
+                <li>Twitter: @hackbca</li>
+                <li>Instagram: @hackbca</li>
+                <li>Facebook: @hackbca</li>
+                <li>Email: hackbca@_____</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+            © 2021 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          </div>
+        </div>
+      </footer>
+    
+      <script src="/js/event_utils.js"></script>
+    
+      <!-- Compiled and minified JavaScript -->
+      <script src="/js/materialize.min.js"></script>
+    
+      <!-- initialize Materialize elements -->
+      <script> M.AutoInit();</script>
+</body>
+</html>
